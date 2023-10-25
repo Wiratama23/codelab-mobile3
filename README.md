@@ -1,16 +1,11 @@
 # codelab1
 
-A new Flutter project.
+Tugas Codelab Mobile Modul 1
 
-## Getting Started
+## Anggota Kelompok
+- Bahrul 'Ulum Fadhlur R #202110370311462
+- Romadhon Wiratama #202110370311471
+- Muhammad Gus Nadir #202110370311481
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
