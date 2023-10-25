@@ -3,9 +3,9 @@
 Tugas Codelab Mobile Modul 1
 
 ## Anggota Kelompok
-- Bahrul 'Ulum Fadhlur R #202110370311462
-- Romadhon Wiratama #202110370311471
-- Muhammad Gus Nadir #202110370311481
+- Bahrul 'Ulum Fadhlur R 202110370311462
+- Romadhon Wiratama 202110370311471
+- Muhammad Gus Nadir 202110370311481
 
 
 
