@@ -11,6 +11,7 @@ class Todos {
     required this.completed,
   });
 
+  //read data from json
   factory Todos.fromJson(Map<String, dynamic> json){
     return Todos(
         userId: json['userId'],
@@ -19,7 +20,15 @@ class Todos {
         completed: json['completed']
     );
   }
+  //write data to json
+  Map<String, dynamic> toJson() => {
+    "userId": userId,
+    "id": id,
+    "title": title,
+    "completed": completed,
+  };
 
-  static List<Todos> fromList(List<dynamic> data) {
-    return data.map((json) => Todos.fromJson(json)).toList();}
+  //add json data to list
+  static List<Todos> fromList(List<dynamic> json) {
+    return json.map((json) => Todos.fromJson(json)).toList();}
 }

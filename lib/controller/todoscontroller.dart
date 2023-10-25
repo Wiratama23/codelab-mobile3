@@ -6,7 +6,7 @@ import 'package:http/http.dart' as http;
 import '../model/todos.dart';
 
 class TodosController extends GetxController{
-  static const String url = "https://jsonplaceholder.typicode.com/todos/";
+  static const String url = "https://jsonplaceholder.typicode.com/todos/5";
   RxList <Todos> futureTodos = RxList<Todos>([]);
   RxBool isLoad = false.obs;
 
@@ -15,16 +15,14 @@ class TodosController extends GetxController{
     try{
       final response = await http.get(Uri.parse(url));
       if (response.statusCode == 200){
-        final data = json.decode(response.body);
-        futureTodos.addAll(Todos.fromList(data));
-        // final data = Todos.fromJson(json.decode(response.body));
-        // futureTodos.add(data);
+        final data = Todos.fromJson(json.decode(response.body));
+        futureTodos.add(data);
       }else{
         throw Exception('Failed to load json');
       }
     }catch(e){
       print(e);
-      Get.snackbar("Error Happen", "Error message: $e");
+      Get.snackbar("Error Happen", "Error message: $e",snackPosition: SnackPosition.BOTTOM);
     }finally{
       isLoad.value = true;
     }
